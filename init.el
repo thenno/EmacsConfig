@@ -1,5 +1,8 @@
 ; init.el
+
 (add-to-list 'load-path "~/.emacs.d/")
+
+(require 'init-thenno)
 
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -14,6 +17,7 @@
       '(
 	jedi
 	python-environment
+	color-theme
 	))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
@@ -21,5 +25,5 @@
     )
   )
 
-(require 'init-thenno)
 (require 'init-python)
+
