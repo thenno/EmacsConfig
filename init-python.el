@@ -13,6 +13,7 @@
   )
 
 (defun my-python-mode-hook ()
+  (linum-mode)
   (init-rope)
   (init-jedi)
   )
