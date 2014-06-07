@@ -1,22 +1,21 @@
-(defun init-rope ()
+(defun init-rope () ; for refactoring
   (require 'pymacs)
   (pymacs-load "ropemacs" "rope-")
   (ropemacs-mode)
   (setq ropemacs-enable-autoimport t)
-  (setq ropemacs-confirm-saving nil)
-  (cond ((file-exists-p ".ropeproject")
-	 (rope-open-project default-directory))
-	((file-exists-p "../.ropeproject")
-	 (rope-open-project (concat default-directory "..")))))
+  (setq ropemacs-guess-project t)
+  )
 
-(defun init-jedi ()
+(defun init-jedi () ; for autocomplition
   (auto-complete-mode)
-  (jedi:ac-setup))
+  (jedi:ac-setup)
+  (jedi-mode)
+  )
 
 (defun my-python-mode-hook ()
   (init-rope)
-  (auto-complete-mode)
-  (jedi:ac-setup))
+  (init-jedi)
+  )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
 	     
