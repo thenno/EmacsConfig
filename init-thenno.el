@@ -1,5 +1,6 @@
 ; thenno.el
 
+(setq auto-save-default nil)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 (iswitchb-mode 1)
 
@@ -12,5 +13,8 @@
 
 ; tramp
 (setq tramp-default-method "ssh")
+
+; ido-mode
+(ido-mode t)
 
 (provide 'init-thenno)
