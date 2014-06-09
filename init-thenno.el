@@ -8,4 +8,9 @@
 
 (setq scroll-step 1)
 
+(setq indent-tab-mode nil)
+
+; tramp
+(setq tramp-default-method "ssh")
+
 (provide 'init-thenno)

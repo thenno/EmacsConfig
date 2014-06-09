@@ -19,5 +19,5 @@
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
-	     
+
 (provide 'init-python)

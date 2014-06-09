@@ -5,8 +5,8 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ; theme settings
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
-(load-theme 'solarized-dark t)
+;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
+(load-theme 'wombat t)
 
 ; dicable bars
 (tool-bar-mode -1)
