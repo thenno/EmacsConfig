@@ -18,6 +18,7 @@
     jedi
     python-environment
     color-theme
+    jabber
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
@@ -27,4 +28,4 @@
 
 (require 'init-python)
 (require 'init-thenno)
-
+(require 'init-jabber)
