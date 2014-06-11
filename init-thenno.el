@@ -12,6 +12,7 @@
 (setq indent-tab-mode nil)
 
 ; tramp
+(setq tramp-terminal-type "dumb")
 (setq tramp-default-method "ssh")
 (setq tramp-chunksize 100)
 
