@@ -6,5 +6,6 @@ elpa
 eshell
 jabber-avatar-cache
 jabber-history
+init-jabber.el
 .python-environments
 tramp
