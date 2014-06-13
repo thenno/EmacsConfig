@@ -19,6 +19,9 @@
     python-environment
     color-theme
     jabber
+    flymake
+    python-pylint
+    python-pep8
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
