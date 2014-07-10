@@ -19,9 +19,8 @@
     python-environment
     color-theme
     jabber
-    flymake
-    python-pylint
-    python-pep8
+    magit
+    flycheck
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
@@ -29,6 +28,7 @@
     )
   )
 
+(require 'init-flycheck)
 (require 'init-python)
 (require 'init-thenno)
 (require 'init-jabber)

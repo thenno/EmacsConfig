@@ -6,6 +6,7 @@
 
 ; theme settings
 ;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
+(set-default-font "Ubuntu Mono 13")
 (load-theme 'wombat t)
 
 ; dicable bars

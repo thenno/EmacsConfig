@@ -12,10 +12,17 @@
   (jedi-mode)
   )
 
+(defun init-bindings ()
+  (global-set-key (kbd "C-c p l") 'python-pylint)
+  (global-set-key (kbd "C-c p 8") 'python-pep8)
+  )
+
 (defun my-python-mode-hook ()
   (linum-mode)
   (init-rope)
   (init-jedi)
+  (init-bindings)
+  (flycheck-mode t)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
