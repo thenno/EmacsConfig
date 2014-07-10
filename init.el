@@ -1,6 +1,7 @@
 ; init.el
 
 (add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/config")
 
 (require 'init-start)
 

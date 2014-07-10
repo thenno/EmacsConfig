@@ -7,7 +7,9 @@
   )
 
 (defun init-jedi () ; for autocomplition
+  (jedi:setup)
   (auto-complete-mode)
+  (setq jedi:complete-on-dot t)
   (jedi:ac-setup)
   (jedi-mode)
   )
