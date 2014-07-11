@@ -29,12 +29,18 @@
   (global-set-key (kbd "C-c p") 'flycheck-list-errors)
   )
 
+(defun init-braces ()
+  (electric-pair-mode t)
+  (show-paren-mode t)
+  )
+
 (defun my-python-mode-hook ()
   (linum-mode)
   (init-fill-column)
   (init-rope)
   (init-jedi)
   (init-bindings)
+  (init-autopair)
   (init-flycheck)
   )
 
