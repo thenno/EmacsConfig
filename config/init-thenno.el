@@ -1,6 +1,10 @@
 ; thenno.el
 
 (setq auto-save-default nil)
+
+(savehist-mode t)
+(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 (iswitchb-mode 1)
 

@@ -26,8 +26,7 @@
   )
 
 (defun init-bindings ()
-  (global-set-key (kbd "C-c p l") 'python-pylint)
-  (global-set-key (kbd "C-c p 8") 'python-pep8)
+  (global-set-key (kbd "C-c p") 'flycheck-list-errors)
   )
 
 (defun my-python-mode-hook ()
