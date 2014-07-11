@@ -6,6 +6,12 @@
   (setq ropemacs-guess-project t)
   )
 
+(defun init-flycheck () ; for code check
+  (flycheck-mode t)
+  (setq flycheck-pylintrc "~/.emacs.d/config/pylintrc")
+  (flycheck-select-checker 'python-pylint)
+  )
+
 (defun init-jedi () ; for autocomplition
   (jedi:setup)
   (auto-complete-mode)
@@ -24,7 +30,7 @@
   (init-rope)
   (init-jedi)
   (init-bindings)
-  (flycheck-mode t)
+  (init-flycheck)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
