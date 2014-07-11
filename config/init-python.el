@@ -12,6 +12,11 @@
   (flycheck-select-checker 'python-pylint)
   )
 
+(defun init-fill-column ()
+  (fci-mode t)
+  (setq fci-rule-column 79)
+  )
+
 (defun init-jedi () ; for autocomplition
   (jedi:setup)
   (auto-complete-mode)
@@ -27,6 +32,7 @@
 
 (defun my-python-mode-hook ()
   (linum-mode)
+  (init-fill-column)
   (init-rope)
   (init-jedi)
   (init-bindings)

@@ -22,6 +22,7 @@
     jabber
     magit
     flycheck
+    fill-column-indicator
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
