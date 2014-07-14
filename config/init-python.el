@@ -34,11 +34,19 @@
 
 (defun init-bindings ()
   (global-set-key (kbd "C-c p") 'flycheck-list-errors)
+  (global-set-key (kbd "C-c s") 'py-send-region-ipython)
   )
 
 (defun init-braces ()
   (electric-pair-mode t)
   (show-paren-mode t)
+  )
+
+(defun init-ipython ()
+  (require 'ipython)
+  (setq python-python-command "ipython")
+  (setq py-python-command-args '("--colors=linux"))
+  (setq py-default-interpreter "ipython")
   )
 
 (defun my-python-mode-hook ()
@@ -50,6 +58,7 @@
   (init-bindings)
   (init-braces)
   (init-flycheck)
+  (init-ipython)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
