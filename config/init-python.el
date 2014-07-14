@@ -6,6 +6,13 @@
   (setq ropemacs-guess-project t)
   )
 
+(defun init-autocomplite ()
+  (auto-complete-mode t)
+  (ac-ropemacs-initialize)
+  (setq ropemacs-enable-autoimport t)
+  (add-to-list 'ac-sources 'ac-source-ropemacs)
+  )
+
 (defun init-flycheck () ; for code check
   (flycheck-mode t)
   (setq flycheck-pylintrc "~/.emacs.d/config/pylintrc")
@@ -19,8 +26,8 @@
 
 (defun init-jedi () ; for autocomplition
   (jedi:setup)
-  (auto-complete-mode)
   (setq jedi:complete-on-dot t)
+  (setq jedi:tooltip-method '(pos-tip))
   (jedi:ac-setup)
   (jedi-mode)
   )
@@ -38,9 +45,10 @@
   (linum-mode)
   (init-fill-column)
   (init-rope)
+;  (init-autocomplite)
   (init-jedi)
   (init-bindings)
-  (init-autopair)
+  (init-braces)
   (init-flycheck)
   )
 
