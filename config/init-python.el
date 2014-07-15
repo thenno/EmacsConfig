@@ -14,6 +14,7 @@
   )
 
 (defun init-flycheck () ; for code check
+  (require 'init-flycheck-pylint)
   (flycheck-mode t)
   (setq flycheck-pylintrc "~/.emacs.d/config/pylintrc")
   (flycheck-select-checker 'python-pylint)
@@ -60,7 +61,6 @@
   (init-braces)
   (init-flycheck)
   (init-ipython)
-  (require 'init-flycheck-pylint)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
