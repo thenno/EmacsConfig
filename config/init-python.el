@@ -60,6 +60,7 @@
   (init-braces)
   (init-flycheck)
   (init-ipython)
+  (require 'init-flycheck-pylint)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
