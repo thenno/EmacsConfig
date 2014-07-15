@@ -20,8 +20,9 @@
   )
 
 (defun init-fill-column ()
-  (fci-mode t)
-  (setq fci-rule-column 79)
+  (setq whitespace-style '(face lines-tail))
+  (setq whitespace-line-column 79)
+  (whitespace-mode)
   )
 
 (defun init-jedi () ; for autocomplition

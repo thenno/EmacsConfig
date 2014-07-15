@@ -18,11 +18,13 @@
       '(
     jedi
     python-environment
+    python-mode
     color-theme
     jabber
     magit
     flycheck
     fill-column-indicator
+    anything-ipython
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
@@ -33,4 +35,5 @@
 (require 'init-flycheck)
 (require 'init-python)
 (require 'init-thenno)
-(require 'init-jabber)
+;(require 'init-jabber)
+(require 'init-ido)
