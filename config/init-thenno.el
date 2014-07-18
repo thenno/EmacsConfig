@@ -20,8 +20,6 @@
 (setq tramp-terminal-type "dumb")
 (setq tramp-default-method "ssh")
 (setq tramp-chunksize 100)
-
-; ido-mode
-(ido-mode t)
+;(tramp-parse-shosts "~/.ssh/known_hosts")
 
 (provide 'init-thenno)
