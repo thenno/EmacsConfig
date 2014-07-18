@@ -22,8 +22,8 @@
     color-theme
     jabber
     magit
+    magit-tramp
     flycheck
-    fill-column-indicator
     anything-ipython
     ))
 (dolist (pack my-packages)
