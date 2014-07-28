@@ -16,15 +16,16 @@
 ;(package-refresh-contents)
 (setq my-packages
       '(
-    jedi
-    python-environment
-    python-mode
-    color-theme
-    jabber
-    magit
-    magit-tramp
-    flycheck
-    anything-ipython
+	python-environment
+	python-mode
+	color-theme
+	jabber
+	magit
+	magit-tramp
+	flycheck
+	anything-ipython
+	anaconda-mode
+	ac-anaconda
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)

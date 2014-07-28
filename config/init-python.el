@@ -8,9 +8,11 @@
 
 (defun init-autocomplite ()
   (auto-complete-mode t)
-  (ac-ropemacs-initialize)
-  (setq ropemacs-enable-autoimport t)
-  (add-to-list 'ac-sources 'ac-source-ropemacs)
+  (setq-default ac-sources '())
+  (anaconda-mode t)
+  (ac-anaconda-setup)
+  (setq ac-auto-start t)
+  (setq ac-show-menu-immediately-on-auto-complete t)
   )
 
 (defun init-flycheck () ; for code check
@@ -26,14 +28,6 @@
   (whitespace-mode)
   )
 
-(defun init-jedi () ; for autocomplition
-  (jedi:setup)
-  (setq jedi:complete-on-dot t)
-  (setq jedi:tooltip-method '(pos-tip))
-  (jedi:ac-setup)
-  (jedi-mode)
-  )
-
 (defun init-bindings ()
   (global-set-key (kbd "C-c p") 'flycheck-list-errors)
   (global-set-key (kbd "C-c s") 'py-send-region-ipython)
@@ -44,23 +38,14 @@
   (show-paren-mode t)
   )
 
-(defun init-ipython ()
-  (require 'ipython)
-  (setq python-python-command "ipython")
-  (setq py-python-command-args '("--colors=linux"))
-  (setq py-default-interpreter "ipython")
-  )
-
 (defun my-python-mode-hook ()
   (linum-mode)
   (init-fill-column)
-  (init-rope)
-;  (init-autocomplite)
-  (init-jedi)
+  (init-autocomplite)
+;  (init-rope)
   (init-bindings)
   (init-braces)
   (init-flycheck)
-  (init-ipython)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
