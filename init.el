@@ -23,9 +23,10 @@
 	magit
 	magit-tramp
 	flycheck
-	anything-ipython
 	anaconda-mode
 	ac-anaconda
+	clojure-mode
+	rainbow-delimiters
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
@@ -38,3 +39,5 @@
 (require 'init-thenno)
 ;(require 'init-jabber)
 (require 'init-ido)
+(require 'init-tramp)
+(require 'init-key-bindings)
