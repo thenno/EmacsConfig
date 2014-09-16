@@ -10,7 +10,6 @@
 
 (setq temporary-file-directory "~/.emacs.d/temp/")
 
-(global-set-key (kbd "RET") 'newline-and-indent)
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq scroll-step 1)
