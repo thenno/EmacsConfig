@@ -16,10 +16,9 @@
   )
 
 (defun init-flycheck () ; for code check
-  (require 'init-flycheck-pylint)
   (flycheck-mode t)
-  (setq flycheck-pylintrc "~/.emacs.d/config/pylintrc")
-  (flycheck-select-checker 'python-pylint)
+  (require 'init-flycheck)
+  (flycheck-select-checker 'python-flake8)
   )
 
 (defun init-fill-column ()
@@ -34,18 +33,12 @@
   (global-set-key (kbd "C-c g") 'anaconda-mode-goto)
   )
 
-(defun init-braces ()
-  (electric-pair-mode t)
-  (show-paren-mode t)
-  )
-
 (defun my-python-mode-hook ()
   (linum-mode)
   (init-fill-column)
   (init-autocomplite)
-;  (init-rope)
+  (init-rope)
   (init-bindings)
-  (init-braces)
   (init-flycheck)
   )
 
