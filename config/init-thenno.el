@@ -5,6 +5,8 @@
 (projectile-global-mode)
 (setq projectile-enable-caching t)
 
+(require 'redo+)
+
 (savehist-mode t)
 (setq savehist-additional-variables '(kill-ring
 				      search-ring

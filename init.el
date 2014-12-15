@@ -31,6 +31,7 @@
 	projectile
 	sr-speedbar
 	idomenu
+	redo+
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
