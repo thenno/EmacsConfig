@@ -1,6 +1,7 @@
-/*
+*
 !config
 !themes
+!temp
 !.gitignore
 !.gitmodules
 !init.el
