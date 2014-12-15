@@ -16,10 +16,11 @@
 ;(package-refresh-contents)
 (setq my-packages
       '(
-	python-environment
 	python-mode
+	pymacs
 	color-theme
 	jabber
+	markdown-mode
 	magit
 	magit-tramp
 	flycheck
@@ -27,6 +28,9 @@
 	ac-anaconda
 	clojure-mode
 	rainbow-delimiters
+	projectile
+	sr-speedbar
+	idomenu
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
@@ -34,10 +38,13 @@
     )
   )
 
+(require 'init-func)
 (require 'init-flycheck)
 (require 'init-python)
+(require 'init-clojure)
 (require 'init-thenno)
 ;(require 'init-jabber)
 (require 'init-ido)
 (require 'init-tramp)
 (require 'init-key-bindings)
+(require 'init-markdown)
