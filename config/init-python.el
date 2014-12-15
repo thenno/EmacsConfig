@@ -18,7 +18,8 @@
 (defun init-flycheck () ; for code check
   (flycheck-mode t)
   (require 'init-flycheck)
-  (flycheck-select-checker 'python-flake8)
+  (setq flycheck-pylintrc "~/.emacs.d/config/pylintrc")
+  (flycheck-select-checker 'python-pylint)
   )
 
 (defun init-fill-column ()
@@ -35,9 +36,9 @@
 
 (defun my-python-mode-hook ()
   (linum-mode)
+  (init-rope)
   (init-fill-column)
   (init-autocomplite)
-  (init-rope)
   (init-bindings)
   (init-flycheck)
   )
