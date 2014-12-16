@@ -5,5 +5,4 @@
 !.gitignore
 !.gitmodules
 !init.el
-
 config/init-jabber.el
