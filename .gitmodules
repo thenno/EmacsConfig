@@ -1,3 +1,12 @@
 [submodule "themes/emacs-color-theme-solarized"]
 	path = themes/emacs-color-theme-solarized
 	url = git@github.com:sellout/emacs-color-theme-solarized.git
+[submodule "themes/erosiond-theme"]
+	path = themes/erosiond-theme
+	url = git@github.com:darrik/erosiond-theme.git
+[submodule "themes/tomorrow-night-paradise-theme.el"]
+	path = themes/tomorrow-night-paradise-theme.el
+	url = git@github.com:jimeh/tomorrow-night-paradise-theme.el.git
+[submodule "themes/tomorrow-night-paradise-theme"]
+	path = themes/tomorrow-night-paradise-theme
+	url = git@github.com:jimeh/tomorrow-night-paradise-theme.el.git
