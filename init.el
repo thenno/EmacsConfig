@@ -16,22 +16,23 @@
 ;(package-refresh-contents)
 (setq my-packages
       '(
-	python-mode
-	pymacs
-	color-theme
-	jabber
-	markdown-mode
-	magit
-	magit-tramp
-	flycheck
-	anaconda-mode
-	ac-anaconda
-	clojure-mode
-	rainbow-delimiters
-	projectile
-	sr-speedbar
-	idomenu
-	redo+
+        python-mode
+        pymacs
+        color-theme
+        jabber
+        markdown-mode
+        magit
+        magit-tramp
+        flycheck
+        anaconda-mode
+        ac-anaconda
+        clojure-mode
+        rainbow-delimiters
+        projectile
+        sr-speedbar
+        idomenu
+        redo+
+        emerge
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)

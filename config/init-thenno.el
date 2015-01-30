@@ -22,6 +22,6 @@
 
 (setq scroll-step 1)
 
-(setq indent-tab-mode nil)
+(set-default 'indent-tabs-mode nil)
 
 (provide 'init-thenno)
