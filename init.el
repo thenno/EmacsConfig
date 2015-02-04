@@ -33,6 +33,7 @@
         idomenu
         redo+
         emerge
+        yaml-mode
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
