@@ -1,8 +1,9 @@
 *
-!config
-!themes/*
-!temp
-!.gitignore
-!.gitmodules
-!init.el
-config/init-jabber.el
+!/config/
+!/themes/
+!/temp/
+!/plugins/
+!/.gitignore
+!/.gitmodules
+!/init.el
+/config/init-jabber.el
