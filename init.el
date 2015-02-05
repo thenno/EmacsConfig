@@ -35,6 +35,7 @@
         redo+
         emerge
         yaml-mode
+        mode-compile
     ))
 (dolist (pack my-packages)
   (unless (package-installed-p pack)
