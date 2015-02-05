@@ -2,6 +2,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/config")
+(add-to-list 'load-path "~/.emacs.d/plugins")
 
 (require 'init-start)
 
@@ -51,3 +52,5 @@
 (require 'init-tramp)
 (require 'init-key-bindings)
 (require 'init-markdown)
+(require 'mrproc-mode)
+(require 'init-perl)

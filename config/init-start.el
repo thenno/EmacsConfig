@@ -11,9 +11,9 @@
 (load-theme 'tomorrow-night-paradise t)
 
 ; dicable bars
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+;(tool-bar-mode -1)
+;(menu-bar-mode -1)
+;(scroll-bar-mode -1)
 
 (custom-set-variables
  '(ansi-term-color-vector [unspecified "#000000" "#d54e53" "#afd75f" "#e7c547" "#5f87d7" "#af87d7" "#5f87d7" "#dadada"])
