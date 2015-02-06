@@ -1,18 +1,19 @@
 (defvar mrproc-keywords-regexp
   (regexp-opt '("map" "reduce" "sort" "read" "write" "publish" "format")
-              'words))
+              'symbols))
 
 (defvar mrproc-builtins-regexp
   (regexp-opt '("range")
-              'words))
+              'symbols))
 
 (setq mrproc-font-lock-keywords
       `(
         (,mrproc-builtins-regexp . font-lock-builtin-face)
-        (,"\\${\\([^}]+\\)}" 1 font-lock-variable-name-face) ; ${variable}
-        (,"\\$\\(\\(?:::\\)?\\(?:[[:alnum:]_]+::\\)*[[:alnum:]_]+\\)" 1 font-lock-variable-name-face) ; $variable
-        (,"[[:space:]]-\\([[:word:]]+\\)" 1 font-lock-keyword-face)
-        (,mrproc-keywords-regexp . font-lock-type-face)))
+        (,"\\(\\$\\(?:::\\)?\\(?:[[:alnum:]_]+::\\)*[[:alnum:]_]+\\)" 1 font-lock-variable-name-face) ; $variable
+        (,"\\(\\$\\)" 1 font-lock-variable-name-face)
+        (,"[[:space:]]\\(-\\([[:word:]]+_?\\)+\\)" 1 font-lock-keyword-face)
+        (,"^\\(\\([[:word:]]+_?\\)+ = \\)" 1 font-lock-variable-name-face)
+        (,mrproc-keywords-regexp . font-lock-keyword-face)))
 
 (defvar mrproc-syntax-table nil "Syntax table for mrproc-mode")
 (setq mrproc-syntax-table
