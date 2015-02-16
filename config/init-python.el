@@ -7,12 +7,9 @@
   )
 
 (defun init-autocomplite ()
-  (auto-complete-mode t)
-  (setq-default ac-sources '())
   (anaconda-mode t)
-  (ac-anaconda-setup)
-  (setq ac-auto-start t)
-  (setq ac-show-menu-immediately-on-auto-complete t)
+  (company-mode t)
+  (add-to-list 'company-backends 'company-anaconda)
   )
 
 (defun init-flycheck () ; for code check

@@ -7,41 +7,40 @@
 (require 'init-start)
 
 (require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")
-             )
-      )
-
 (package-initialize)
-;(package-refresh-contents)
-(setq my-packages
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(unless (require 'el-get nil 'noerror)
+    (with-current-buffer
+          (url-retrieve-synchronously
+               "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+          (let (el-get-master-branch)
+                (goto-char (point-max))
+                  (eval-print-last-sexp))))
+(el-get 'sync)
+
+; EL-GET installing
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(require 'el-get)
+(setq my-el-get-packages
       '(
-        python-mode
-        pymacs
         color-theme
-        jabber
         markdown-mode
+        pymacs
+        anaconda-mode
+        clojure-mode
+        company-anaconda
+        flycheck
+        idomenu
         magit
         magit-tramp
-        flycheck
-        anaconda-mode
-        ac-anaconda
-        clojure-mode
-        rainbow-delimiters
-        projectile
-        sr-speedbar
-        idomenu
-        redo+
-        emerge
-        yaml-mode
         mode-compile
+        projectile
+        rainbow-delimiters
+        redo+
+        sr-speedbar
+        yaml-mode
     ))
-(dolist (pack my-packages)
-  (unless (package-installed-p pack)
-    (package-install pack)
-    )
-  )
+(el-get 'sync my-el-get-packages)
 
 (require 'init-func)
 (require 'init-flycheck)
