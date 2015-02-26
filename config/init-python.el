@@ -26,9 +26,7 @@
   )
 
 (defun init-bindings ()
-  (global-set-key (kbd "C-c p") 'flycheck-list-errors)
-  (global-set-key (kbd "C-c s") 'py-send-region-ipython)
-  (global-set-key (kbd "C-c g") 'anaconda-mode-goto)
+  (global-set-key (kbd "M-p p") 'flycheck-list-errors)
   )
 
 (defun my-python-mode-hook ()
