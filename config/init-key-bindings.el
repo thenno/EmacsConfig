@@ -11,6 +11,7 @@
 (global-set-key (kbd "M-p o") 'sr-speedbar-open)
 (global-set-key (kbd "M-p c") 'sr-speedbar-toggle)
 
+(global-set-key (kbd "C-j") 'delete-indentation)
 (global-set-key (kbd "RET") 'newline-and-indent)
 
 (provide 'init-key-bindings)
