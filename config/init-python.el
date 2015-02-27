@@ -27,6 +27,7 @@
 
 (defun init-bindings ()
   (global-set-key (kbd "M-p p") 'flycheck-list-errors)
+  (global-set-key (kbd "M-p u") 'anaconda-mode-usages)
   )
 
 (defun my-python-mode-hook ()

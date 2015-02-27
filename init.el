@@ -24,6 +24,7 @@
 (setq my-el-get-packages
       '(
         color-theme
+        sublime-themes
         markdown-mode
         pymacs
         anaconda-mode
