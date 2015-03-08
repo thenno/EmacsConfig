@@ -35,11 +35,14 @@
         magit
         magit-tramp
         mode-compile
-        projectile
         rainbow-delimiters
         redo+
         sr-speedbar
         yaml-mode
+        scala-mode2
+        sbt-mode
+        ensime
+        yasnippet
     ))
 (el-get 'sync my-el-get-packages)
 

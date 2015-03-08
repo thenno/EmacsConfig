@@ -2,9 +2,6 @@
 
 (setq auto-save-default nil)
 
-(projectile-global-mode)
-(setq projectile-enable-caching t)
-
 (require 'redo+)
 
 (savehist-mode t)
