@@ -4,7 +4,7 @@
 
 (ido-mode 'both)
 
-(setq ido-ignore-buffers '("\\` " "^\*Mess" "^\*Back" ".*Completion" "^\*Ido" "^\*trace" "^\*compilation" "^\*GTAGS" "^session\.*" "^\*inferior-ensime-\.*")
+(setq ido-ignore-buffers '("\\` " "^\*Mess" "^\*Back" ".*Completion" "^\*Ido" "^\*trace" "^\*compilation" "^\*GTAGS" "^session\.*" "^\*inferior-ensime-\.*" "^\*Ensime-")
       ido-enable-last-directory-history t
       )
 

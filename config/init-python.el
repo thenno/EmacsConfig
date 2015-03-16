@@ -31,6 +31,7 @@
   )
 
 (defun my-python-mode-hook ()
+  (auto-complete-mode 0)
   (linum-mode)
   (init-rope)
   (init-fill-column)
