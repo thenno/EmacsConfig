@@ -11,4 +11,6 @@
 (custom-set-variables
  '(ido-enable-tramp-completion nil))
 
+(setq ido-auto-merge-work-directories-length -1)
+
 (provide 'init-ido)
