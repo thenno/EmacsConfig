@@ -18,11 +18,15 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq scroll-step 1)
+(setq hscroll-step 1)
 (setq scroll-margin 5)
+
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
+
 (setq scroll-conservatively 10000)
 (setq scroll-preserve-screen-position 't)
-(setq mouse-wheel-progressive-speed nil)
+
 
 (set-default 'indent-tabs-mode nil)
 
