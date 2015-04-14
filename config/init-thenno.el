@@ -27,7 +27,6 @@
 (setq scroll-conservatively 10000)
 (setq scroll-preserve-screen-position 't)
 
-
 (set-default 'indent-tabs-mode nil)
 
 (provide 'init-thenno)

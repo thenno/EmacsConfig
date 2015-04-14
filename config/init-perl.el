@@ -1,12 +1,12 @@
-(defun init-fill-column ()
-  (setq whitespace-style '(face lines-tail trailing))
-  (setq whitespace-line-column 79)
-  (whitespace-mode)
+(defun indent-tabs ()
+  (set-default 'indent-tabs-mode t)
+  (setq-default tab-width 4)
   )
 
 (defun my-perl-mode-hook ()
-  (init-fill-column)
-  (linum-mode t)
+  (require 'init-programming)
+  (programming-mode)
+  (indent-tabs)
   )
 
 (add-hook 'perl-mode-hook 'my-perl-mode-hook)
