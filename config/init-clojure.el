@@ -4,7 +4,8 @@
   )
 
 (defun my-clojure-hook ()
-  (linum-mode)
+  (require 'init-programming)
+  (programming-mode)
   (init-braces)
   )
 

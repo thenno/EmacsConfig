@@ -58,3 +58,4 @@
 (require 'mrproc-mode)
 (require 'init-perl)
 (require 'init-scala)
+(require 'nlinum)

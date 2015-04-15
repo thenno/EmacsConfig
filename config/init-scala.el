@@ -1,5 +1,6 @@
 (defun my-scala-mode-hook ()
-  (linum-mode)
+  (require 'init-programming)
+  (programming-mode)
   (auto-complete-mode 0)
   (setq ensime-sem-high-enabled-p nil)
   )
