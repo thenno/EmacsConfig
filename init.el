@@ -46,7 +46,6 @@
     ))
 (el-get 'sync my-el-get-packages)
 
-(require 'init-func)
 (require 'init-flycheck)
 (require 'init-python)
 (require 'init-clojure)
