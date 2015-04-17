@@ -18,6 +18,7 @@
         "^\*Ensime-"
         "^\*Pymacs"
         "^\*anaconda-"
+        "^\*Flycheck "
         )
       ido-enable-last-directory-history t
       )
