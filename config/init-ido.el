@@ -19,6 +19,7 @@
         "^\*Pymacs"
         "^\*anaconda-"
         "^\*Flycheck "
+        "^\*magit"
         )
       ido-enable-last-directory-history t
       )
