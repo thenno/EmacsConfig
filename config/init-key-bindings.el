@@ -4,6 +4,9 @@
 (global-set-key "\C-r" 'isearch-backward-regexp)
 (global-set-key "\C-\M-r" 'replace-regexp)
 
+(global-set-key (kbd "C-w") 'backward-kill-word)
+(global-set-key (kbd "M-k") 'kill-region)
+
 (global-set-key (kbd "C-?") 'redo)
 
 (global-set-key (kbd "<C-return>") (lambda () (interactive) (progn (move-end-of-line 1) (newline-and-indent))))
