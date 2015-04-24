@@ -3,10 +3,16 @@
   (setq-default tab-width 4)
   )
 
+(defun init-autocomplite ()
+  (auto-complete-mode 0)
+  (company-mode t)
+  )
+
 (defun my-perl-mode-hook ()
   (require 'init-programming)
   (programming-mode)
   (indent-tabs)
+  (init-autocomplite)
   )
 
 (add-hook 'perl-mode-hook 'my-perl-mode-hook)
