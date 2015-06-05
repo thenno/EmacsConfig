@@ -6,7 +6,7 @@
   (setq ropemacs-guess-project t)
   )
 
-(defun init-autocomplite ()
+(defun init-company-with-anaconda ()
   (anaconda-mode t)
   (company-mode t)
   (add-to-list 'company-backends 'company-anaconda)
@@ -29,7 +29,7 @@
   (programming-mode)
   (auto-complete-mode 0)
   (init-rope)
-  (init-autocomplite)
+  (init-company-with-anaconda)
   (init-bindings)
   (init-flycheck)
   )
