@@ -59,3 +59,4 @@
 (require 'init-perl)
 (require 'init-scala)
 (require 'nlinum)
+(require 'init-magit)
