@@ -7,3 +7,6 @@
 [submodule "themes/tomorrow-night-paradise-theme"]
 	path = themes/tomorrow-night-paradise-theme
 	url = git@github.com:thenno/tomorrow-night-paradise-theme.el.git
+[submodule "plugins/scala-mode2"]
+	path = plugins/scala-mode2
+	url = git@github.com:thenno/scala-mode2.git

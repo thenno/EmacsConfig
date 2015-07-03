@@ -39,7 +39,6 @@
         redo+
         sr-speedbar
         yaml-mode
-        scala-mode2
         sbt-mode
         ensime
         yasnippet
