@@ -49,7 +49,6 @@
 (require 'init-python)
 (require 'init-clojure)
 (require 'init-thenno)
-;(require 'init-jabber)
 (require 'init-ido)
 (require 'init-tramp)
 (require 'init-key-bindings)
@@ -58,3 +57,4 @@
 (require 'init-perl)
 (require 'init-scala)
 (require 'nlinum)
+(require 'init-magit)
