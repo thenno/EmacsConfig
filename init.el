@@ -42,6 +42,7 @@
         sbt-mode
         ensime
         yasnippet
+        pde
     ))
 (el-get 'sync my-el-get-packages)
 
