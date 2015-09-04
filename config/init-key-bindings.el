@@ -7,7 +7,10 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-k") 'kill-region)
 
-(global-set-key (kbd "C-?") 'redo)
+(global-set-key (kbd "C-t") 'backward-delete-char)
+
+(global-set-key (kbd "C-u") 'undo-only)
+(global-set-key (kbd "M-u") 'redo)
 
 (global-set-key (kbd "<C-return>") (lambda () (interactive) (progn (move-end-of-line 1) (newline-and-indent))))
 
