@@ -60,3 +60,4 @@
 (require 'init-scala)
 (require 'nlinum)
 (require 'init-magit)
+(require 'init-yasnippet)
