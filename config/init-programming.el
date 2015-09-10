@@ -6,7 +6,6 @@
 
 (defun programming-mode ()
   (init-fill-column)
-  (nlinum-mode t)
   )
 
 (provide 'init-programming)

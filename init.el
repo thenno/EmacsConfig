@@ -44,6 +44,7 @@
         yasnippet
         pde
         ag
+        git-gutter
     ))
 (el-get 'sync my-el-get-packages)
 
@@ -58,6 +59,6 @@
 (require 'mrproc-mode)
 (require 'init-perl)
 (require 'init-scala)
-(require 'nlinum)
 (require 'init-magit)
 (require 'init-yasnippet)
+(require 'init-gitgutter)
