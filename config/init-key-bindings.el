@@ -7,7 +7,9 @@
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-k") 'kill-region)
 
-(global-set-key (kbd "C-t") 'backward-delete-char)
+(global-set-key (kbd "C-h") 'backward-delete-char)
+
+(global-set-key (kbd "C-x h") 'help-command)
 
 (global-set-key (kbd "C-u") 'undo-only)
 (global-set-key (kbd "M-u") 'redo)

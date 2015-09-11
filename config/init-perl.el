@@ -1,6 +1,7 @@
 (defun indent-tabs ()
   (set-default 'indent-tabs-mode t)
   (setq-default tab-width 4)
+  (setq cperl-indent-level 4)
   )
 
 (defun init-autocomplite ()
