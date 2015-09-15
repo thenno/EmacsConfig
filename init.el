@@ -23,10 +23,10 @@
 (require 'el-get)
 (setq my-el-get-packages
       '(
+        python-mode
         color-theme
         sublime-themes
         markdown-mode
-        pymacs
         anaconda-mode
         clojure-mode
         company-anaconda
