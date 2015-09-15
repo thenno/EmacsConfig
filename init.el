@@ -3,10 +3,8 @@
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.emacs.d/config")
 (add-to-list 'load-path "~/.emacs.d/plugins")
-(add-to-list 'load-path "~/.emacs.d/plugins/font-lock-studio")
 
 (require 'init-start)
-(require 'font-lock-studio)
 
 (require 'package)
 (package-initialize)
