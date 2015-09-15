@@ -28,6 +28,7 @@
 
 (set-default 'indent-tabs-mode nil)
 
+(setq x-select-enable-clipboard t)
 
 ; Remove header from grep output
 (defun delete-grep-header ()
