@@ -24,16 +24,17 @@
 (setq my-el-get-packages
       '(
         python-mode
+        jedi
+        company-jedi
+        pymacs
         color-theme
         sublime-themes
         markdown-mode
-        anaconda-mode
         clojure-mode
-        company-anaconda
         flycheck
         idomenu
-        magit
-        magit-tramp
+;        magit
+;        magit-tramp
         mode-compile
         rainbow-delimiters
         redo+
@@ -59,6 +60,6 @@
 (require 'mrproc-mode)
 (require 'init-perl)
 (require 'init-scala)
-(require 'init-magit)
+;(require 'init-magit)
 (require 'init-yasnippet)
 (require 'init-gitgutter)

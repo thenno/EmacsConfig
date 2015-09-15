@@ -9,10 +9,10 @@
   (setq ropemacs-guess-project t)
   )
 
-(defun init-company-with-anaconda ()
-  (anaconda-mode t)
+(defun init-company-with-jedi ()
+  (jedi:install-server)
   (company-mode t)
-  (add-to-list 'company-backends 'company-anaconda)
+  (add-to-list 'company-backends 'company-jedi)
   )
 
 (defun init-flycheck () ; for code check
@@ -32,7 +32,7 @@
   (programming-mode)
   (auto-complete-mode 0)
 ;  (init-rope)
-  (init-company-with-anaconda)
+  (init-company-with-jedi)
   (init-bindings)
   (init-flycheck)
   )
