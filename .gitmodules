@@ -10,3 +10,6 @@
 [submodule "plugins/scala-mode2"]
 	path = plugins/scala-mode2
 	url = git@github.com:thenno/scala-mode2.git
+[submodule "plugins/font-lock-studio"]
+	path = plugins/font-lock-studio
+	url = git@github.com:Lindydancer/font-lock-studio.git
