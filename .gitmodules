@@ -13,3 +13,6 @@
 [submodule "plugins/font-lock-studio"]
 	path = plugins/font-lock-studio
 	url = git@github.com:Lindydancer/font-lock-studio.git
+[submodule "plugins/cperl-mode"]
+	path = plugins/cperl-mode
+	url = git@github.com:thenno/cperl-mode.git

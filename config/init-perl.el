@@ -1,3 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/plugins/cperl-mode")
+
 (defalias 'perl-mode 'cperl-mode)
 
 (defun indent-tabs ()
