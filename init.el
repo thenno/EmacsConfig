@@ -23,7 +23,6 @@
 (require 'el-get)
 (setq my-el-get-packages
       '(
-        python-mode
         jedi
         company-jedi
         pymacs
@@ -55,7 +54,6 @@
 (require 'init-thenno)
 (require 'init-ido)
 (require 'init-tramp)
-(require 'init-key-bindings)
 (require 'init-markdown)
 (require 'mrproc-mode)
 (require 'init-perl)
@@ -63,3 +61,4 @@
 ;(require 'init-magit)
 (require 'init-yasnippet)
 (require 'init-gitgutter)
+(require 'init-key-bindings)
