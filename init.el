@@ -27,7 +27,7 @@
         sublime-themes
         markdown-mode
         pymacs
-		cperl-mode
+        cperl-mode
         anaconda-mode
         clojure-mode
         company-anaconda
