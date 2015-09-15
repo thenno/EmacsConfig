@@ -16,3 +16,6 @@
 [submodule "plugins/cperl-mode"]
 	path = plugins/cperl-mode
 	url = git@github.com:thenno/cperl-mode.git
+[submodule "plugins/pythonic"]
+	path = plugins/pythonic
+	url = git@github.com:proofit404/pythonic.git

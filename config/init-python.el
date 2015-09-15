@@ -1,3 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/plugins/pythonic")
+
 (defun init-rope () ; for refactoring
   (require 'pymacs)
   (pymacs-load "ropemacs" "rope-")
