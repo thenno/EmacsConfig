@@ -1,9 +1,8 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/pythonic")
+(pymacs-load "ropemacs" "rope-") ; hack for normal working
 
 (defun init-rope () ; for refactoring
-  (interactive)
   (require 'pymacs)
-  (pymacs-load "ropemacs" "rope-")
   (ropemacs-mode t)
   (setq ropemacs-enable-autoimport t)
   (setq ropemacs-guess-project t)
@@ -31,7 +30,7 @@
   (require 'init-programming)
   (programming-mode)
   (auto-complete-mode 0)
-;  (init-rope)
+  (init-rope)
   (init-company-with-jedi)
   (init-bindings)
   (init-flycheck)
