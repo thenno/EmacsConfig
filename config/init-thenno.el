@@ -39,4 +39,7 @@
 (defadvice grep (after delete-grep-header activate) (delete-grep-header))
 (defadvice rgrep (after delete-grep-header activate) (delete-grep-header))
 
+(global-auto-complete-mode 0)
+(global-company-mode t)
+
 (provide 'init-thenno)

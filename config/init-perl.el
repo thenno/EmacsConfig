@@ -8,11 +8,6 @@
   (setq cperl-indent-level 4)
   )
 
-(defun init-autocomplite ()
-  (auto-complete-mode 0)
-  (company-mode t)
-  )
-
 (defun init-face ()
   (setq cperl-highlight-variables-indiscriminately nil)
   (custom-set-faces
@@ -25,7 +20,6 @@
   (require 'init-programming)
   (programming-mode)
   (indent-tabs)
-  (init-autocomplite)
   (init-face)
   )
 

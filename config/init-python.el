@@ -14,7 +14,6 @@
   (setq jedi:install-server--command
     `("pip" "install",(convert-standard-filename jedi:source-dir)))
   (jedi:install-server)
-  (company-mode t)
   (add-to-list 'company-backends 'company-jedi)
   )
 
@@ -33,7 +32,6 @@
 (defun my-python-mode-hook ()
   (require 'init-programming)
   (programming-mode)
-  (auto-complete-mode 0)
   (init-rope)
   (init-company-with-jedi)
   (init-bindings)

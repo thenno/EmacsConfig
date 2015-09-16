@@ -4,7 +4,6 @@
   (require 'init-programming)
   (require 'scala-mode2)
   (programming-mode)
-  (auto-complete-mode 0)
   (setq ensime-sem-high-enabled-p nil)
   )
 
