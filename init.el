@@ -32,8 +32,6 @@
         clojure-mode
         flycheck
         idomenu
-;        magit
-;        magit-tramp
         mode-compile
         rainbow-delimiters
         redo+
@@ -58,7 +56,6 @@
 (require 'mrproc-mode)
 (require 'init-perl)
 (require 'init-scala)
-;(require 'init-magit)
 (require 'init-yasnippet)
 (require 'init-gitgutter)
 (require 'init-key-bindings)
