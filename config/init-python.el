@@ -9,6 +9,10 @@
   )
 
 (defun init-company-with-jedi ()
+  (require 'jedi)
+  ; hack for normal working
+  (setq jedi:install-server--command
+    `("pip" "install",(convert-standard-filename jedi:source-dir)))
   (jedi:install-server)
   (company-mode t)
   (add-to-list 'company-backends 'company-jedi)
