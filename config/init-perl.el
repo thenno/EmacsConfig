@@ -6,6 +6,7 @@
   (set-default 'indent-tabs-mode t)
   (setq-default tab-width 4)
   (setq cperl-indent-level 4)
+  (setq cperl-indent-parens-as-block t)
   )
 
 (defun init-face ()
