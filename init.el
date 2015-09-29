@@ -1,6 +1,6 @@
 ; init.el
 
-(add-to-list 'load-path "~/.emacs.d/")
+(when (version< emacs-version "24.4") (add-to-list 'load-path "~/.emacs.d/"))
 (add-to-list 'load-path "~/.emacs.d/config")
 (add-to-list 'load-path "~/.emacs.d/plugins")
 
