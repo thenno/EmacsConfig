@@ -20,6 +20,7 @@
 (defun my-perl-mode-hook ()
   (require 'init-programming)
   (programming-mode)
+  (flycheck-mode 1)
   (indent-tabs)
   (init-face)
   )
