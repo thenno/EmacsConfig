@@ -43,6 +43,7 @@
         pde
         ag
         git-gutter
+        ggtags
     ))
 (el-get 'sync my-el-get-packages)
 

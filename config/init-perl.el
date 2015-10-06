@@ -17,12 +17,18 @@
    )
   )
 
+(defun init-complete ()
+  (ggtags-mode)
+  (setq company-backend 'company-capf)
+  )
+
 (defun my-perl-mode-hook ()
   (require 'init-programming)
   (programming-mode)
   (flycheck-mode 1)
   (indent-tabs)
   (init-face)
+  (init-complete)
   )
 
 (add-hook 'cperl-mode-hook 'my-perl-mode-hook)
