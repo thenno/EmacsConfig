@@ -60,3 +60,4 @@
 (require 'init-yasnippet)
 (require 'init-gitgutter)
 (require 'init-key-bindings)
+(require 'init-ggtags)
