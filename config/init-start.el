@@ -18,6 +18,7 @@
 
 ; company-mode settings
 (custom-set-faces
+ '(ggtags-highlight ((t nil)))
  `(company-scrollbar-bg
    ((t (:background "lightgray"))))
  `(company-scrollbar-fg

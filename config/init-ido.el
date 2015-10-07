@@ -20,6 +20,7 @@
         "^\*anaconda-"
         "^\*Flycheck "
         "^\*magit"
+        "^\*gglobal-"
         )
       ido-enable-last-directory-history t
       )
