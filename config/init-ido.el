@@ -21,6 +21,7 @@
         "^\*Flycheck "
         "^\*magit"
         "^\*ggtags-global*"
+        "^\*epc con 3"
         )
       ido-enable-last-directory-history t
       )

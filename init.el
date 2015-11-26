@@ -44,6 +44,7 @@
         ag
         git-gutter
         ggtags
+        virtualenvwrapper
     ))
 (el-get 'sync my-el-get-packages)
 
