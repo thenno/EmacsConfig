@@ -14,6 +14,9 @@
 (global-set-key (kbd "C-u") 'undo-only)
 (global-set-key (kbd "M-u") 'redo)
 
+(global-set-key (kbd "C-x u") 'upcase-word)
+(global-set-key (kbd "C-x l") 'downcase-word)
+
 (global-set-key (kbd "<C-return>") (lambda () (interactive) (progn (move-end-of-line 1) (newline-and-indent))))
 
 (global-set-key (kbd "M-p o") 'sr-speedbar-open)
