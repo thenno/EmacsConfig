@@ -26,6 +26,7 @@
         jedi
         company-jedi
         pymacs
+        ropemacs
         color-theme
         sublime-themes
         markdown-mode
