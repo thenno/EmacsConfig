@@ -29,6 +29,13 @@
   (global-set-key (kbd "M-p u") 'anaconda-mode-usages)
   )
 
+(defun init-virtualenv ()
+  (require 'virtualenvwrapper)
+  (venv-initialize-interactive-shells) ;; if you want interactive shell support
+  (venv-initialize-eshell) ;; if you want eshell support
+  (setq venv-location "~/.virtualenvs/")
+  )
+
 (defun my-python-mode-hook ()
   (require 'init-programming)
   (programming-mode)
@@ -36,6 +43,7 @@
   (init-company-with-jedi)
   (init-bindings)
   (init-flycheck)
+  (init-virtualenv)
   )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)

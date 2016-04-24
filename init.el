@@ -49,6 +49,7 @@
     ))
 (el-get 'sync my-el-get-packages)
 
+(require 'mrproc-mode)
 (require 'init-flycheck)
 (require 'init-python)
 (require 'init-clojure)
@@ -56,7 +57,6 @@
 (require 'init-ido)
 (require 'init-tramp)
 (require 'init-markdown)
-(require 'mrproc-mode)
 (require 'init-perl)
 (require 'init-scala)
 (require 'init-yasnippet)
