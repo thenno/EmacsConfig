@@ -1,12 +1,4 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/pythonic")
-(pymacs-load "ropemacs" "rope-") ; hack for normal working
-
-(defun init-rope () ; for refactoring
-  (require 'pymacs)
-  (ropemacs-mode t)
-  (setq ropemacs-enable-autoimport t)
-  (setq ropemacs-guess-project t)
-  )
 
 (defun init-company-with-jedi ()
   (require 'jedi)
@@ -27,6 +19,7 @@
 (defun init-bindings ()
   (global-set-key (kbd "M-p p") 'flycheck-list-errors)
   (global-set-key (kbd "M-p u") 'anaconda-mode-usages)
+  (global-set-key (kbd "C-c g") 'jedi:goto-definition)
   )
 
 (defun init-virtualenv ()
@@ -39,7 +32,6 @@
 (defun my-python-mode-hook ()
   (require 'init-programming)
   (programming-mode)
-  (init-rope)
   (init-company-with-jedi)
   (init-bindings)
   (init-flycheck)
