@@ -25,8 +25,6 @@
       '(
         jedi
         company-jedi
-        color-theme
-        sublime-themes
         markdown-mode
         clojure-mode
         flycheck
@@ -38,7 +36,6 @@
         yaml-mode
         sbt-mode
         ensime
-        yasnippet
         pde
         ag
         git-gutter
@@ -57,6 +54,5 @@
 (require 'init-markdown)
 (require 'init-perl)
 (require 'init-scala)
-(require 'init-yasnippet)
 (require 'init-gitgutter)
 (require 'init-key-bindings)
