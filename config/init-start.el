@@ -16,6 +16,9 @@
     (scroll-bar-mode -1)
     (tool-bar-mode -1))
 
+(require 'syntax-subword)
+(global-syntax-subword-mode 1)
+
 ; company-mode settings
 (custom-set-faces
  '(ggtags-highlight ((t nil)))
