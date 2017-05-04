@@ -19,6 +19,8 @@
 (require 'syntax-subword)
 (global-syntax-subword-mode 1)
 
+(show-paren-mode t)
+
 ; company-mode settings
 (custom-set-faces
  '(ggtags-highlight ((t nil)))
