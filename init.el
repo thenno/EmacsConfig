@@ -41,6 +41,8 @@
         git-gutter
         ggtags
         virtualenvwrapper
+        dockerfile-mode
+        haskell-mode
     ))
 (el-get 'sync my-el-get-packages)
 
